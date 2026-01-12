@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student PDF Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student PDF Library</h1>
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('ba')">BA</button>
+            <button onclick="showSection('bca')">BCA</button>
+            <button onclick="showSection('bsc')">BSC</button>
+            <button onclick="showSection('bcom')">B.COM</button>
+            <button onclick="showSection('upload')">Upload PDF</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <h2>Welcome to the Student PDF Library</h2>
+            <p>Access and share PDFs for BA, BCA, BSC, and B.COM subjects.</p>
+            <img src="https://via.placeholder.com/600x300?text=Library+Image" alt="Library Image" class="hero-image">
+        </section>
+
+        <!-- BA Section -->
+        <section id="ba" class="section">
+            <h2>BA PDFs</h2>
+            <img src="https://via.placeholder.com/200x150?text=BA" alt="BA Image" class="subject-image">
+            <ul class="pdf-list">
+                <li><img src="https://via.placeholder.com/100x100?text=PDF1" alt="PDF Thumbnail"><a href="https://example.com/sample-ba-pdf.pdf" download>Download BA History Notes</a></li>
+                <li><img src="https://via.placeholder.com/100x100?text=PDF2" alt="PDF Thumbnail"><a href="https://example.com/sample-ba-pdf2.pdf" download>Download BA Literature Guide</a></li>
+            </ul>
+        </section>
+
+        <!-- BCA Section -->
+        <section id="bca" class="section">
+            <h2>BCA PDFs</h2>
+            <img src="https://via.placeholder.com/200x150?text=BCA" alt="BCA Image" class="subject-image">
+            <ul class="pdf-list">
+                <li><img src="https://via.placeholder.com/100x100?text=PDF1" alt="PDF Thumbnail"><a href="https://example.com/sample-bca-pdf.pdf" download>Download BCA Programming Notes</a></li>
+                <li><img src="https://via.placeholder.com/100x100?text=PDF2" alt="PDF Thumbnail"><a href="https://example.com/sample-bca-pdf2.pdf" download>Download BCA Database Guide</a></li>
+            </ul>
+        </section>
+
+        <!-- BSC Section -->
+        <section id="bsc" class="section">
+            <h2>BSC PDFs</h2>
+            <img src="https://via.placeholder.com/200x150?text=BSC" alt="BSC Image" class="subject-image">
+            <ul class="pdf-list">
+                <li><img src="https://via.placeholder.com/100x100?text=PDF1" alt="PDF Thumbnail"><a href="https://example.com/sample-bsc-pdf.pdf" download>Download BSC Physics Notes</a></li>
+                <li><img src="https://via.placeholder.com/100x100?text=PDF2" alt="PDF Thumbnail"><a href="https://example.com/sample-bsc-pdf2.pdf" download>Download BSC Chemistry Guide</a></li>
+            </ul>
+        </section>
+
+        <!-- B.COM Section -->
+        <section id="bcom" class="section">
+            <h2>B.COM PDFs</h2>
+            <img src="https://via.placeholder.com/200x150?text=B.COM" alt="B.COM Image" class="subject-image">
+            <ul class="pdf-list">
+                <li><img src="https://via.placeholder.com/100x100?text=PDF1" alt="PDF Thumbnail"><a href="https://example.com/sample-bcom-pdf.pdf" download>Download B.COM Accounting Notes</a></li>
+                <li><img src="https://via.placeholder.com/100x100?text=PDF2" alt="PDF Thumbnail"><a href="https://example.com/sample-bcom-pdf2.pdf" download>Download B.COM Finance Guide</a></li>
+            </ul>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload" class="section">
+            <h2>Upload PDF</h2>
+            <form id="upload-form">
+                <label for="subject">Subject:</label>
+                <select id="subject">
+                    <option value="ba">BA</option>
+                    <option value="bca">BCA</option>
+                    <option value="bsc">BSC</option>
+                    <option value="bcom">B.COM</option>
+                </select>
+                <label for="pdf-file">Select PDF:</label>
+                <input type="file" id="pdf-file" accept=".pdf">
+                <button type="submit">Upload</button>
+            </form>
+            <p id="upload-status"></p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="contact-status"></p>
+            <h3>User Registration/Login (Placeholder)</h3>
+            <form id="user-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Register/Login</button>
+            </form>
+            <p id="user-status"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Student PDF Library. Contact: admin@example.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
